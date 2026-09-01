@@ -1,5 +1,7 @@
 import Nav from "../components/Nav";
 import Image from "next/image";
+import ContactForm from "../components/ContactForm";
+
 
 export default function Home() {
   return (
@@ -116,6 +118,9 @@ export default function Home() {
         </section>
 
 
+
+
+
         <section id="projects" className="px-6 py-24 border-b border-border">
           <div className="max-w-6xl mx-auto">
             <div className="mb-12">
@@ -130,15 +135,20 @@ export default function Home() {
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-              <div className="bg-surface-1 border border-border rounded-xl overflow-hidden hover:border-border-strong hover:-translate-y-1 transition">
-                <div className="h-32 bg-surface-2 overflow-hidden">
+              <div className="bg-surface-1 border border-purple/50 rounded-xl overflow-hidden hover:border-purple hover:-translate-y-1 transition relative">
+                <a href="https://github.com/Alina201998/polling-place-finder" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-0" aria-label="View Polling Place Finder on GitHub" />
+
+                <div className="absolute top-3 left-3 z-10 font-mono text-xs font-bold text-white bg-black/50 backdrop-blur px-2 py-1 rounded pointer-events-none">
+                  01
+                </div>
+                <div className="aspect-video bg-surface-2 overflow-hidden pointer-events-none">
                   <img
                     src="/choose_or_lose_demo.gif"
                     alt="Polling Place Finder demo"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-5">
+                <div className="p-5 pointer-events-none">
                   <div className="font-bold text-base mb-2">Polling Place Finder</div>
                   <p className="text-text-secondary text-sm mb-4">
                     Desktop app that helps users locate their assigned polling place. Migrated the database layer from on-prem SQL Server to Azure SQL, and added an automated pytest suite to catch query and edge-case errors before they reached users.
@@ -149,19 +159,22 @@ export default function Home() {
                     <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Azure SQL</span>
                     <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">pytest</span>
                   </div>
-                  <div className="flex gap-4 text-sm">
-                    <a href="https://github.com/Alina201998/polling-place-finder" className="text-text-secondary hover:text-pink">GitHub</a>
-                  </div>
+                  <div className="text-sm text-text-secondary"></div>
                 </div>
               </div>
 
-              <div className="bg-surface-1 border border-border rounded-xl overflow-hidden hover:border-border-strong hover:-translate-y-1 transition">
-                <div className="h-32 bg-surface-2 overflow-hidden">
+              <div className="bg-surface-1 border border-purple/50 rounded-xl overflow-hidden hover:border-purple hover:-translate-y-1 transition relative">
+                <a href="https://github.com/Alina201998/linkedin-post-generator" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-0" aria-label="View LinkedIn Post Generator on GitHub" />
+
+                <div className="absolute top-3 left-3 z-10 font-mono text-xs font-bold text-white bg-black/50 backdrop-blur px-2 py-1 rounded pointer-events-none">
+                  02
+                </div>
+                <div className="aspect-video bg-surface-2 overflow-hidden pointer-events-none">
                   <video autoPlay loop muted playsInline className="w-full h-full object-cover">
                     <source src="/linkdin_post_generator.mp4" type="video/mp4" />
                   </video>
                 </div>
-                <div className="p-5">
+                <div className="p-5 pointer-events-none">
                   <div className="font-bold text-base mb-2">LinkedIn Post Generator</div>
                   <p className="text-text-secondary text-sm mb-4">
                     An AI pipeline that turns one input into 2–3 tailored LinkedIn post drafts, connecting a React frontend to a Node/Express backend via a REST API. Iterated on prompt structure after early output was too generic, then validated results with real users.
@@ -172,22 +185,29 @@ export default function Home() {
                     <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Express</span>
                     <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">OpenAI API</span>
                   </div>
-                  <div className="flex gap-4 text-sm">
-                    <a href="https://linkedin-post-generator-rho.vercel.app/" className="text-text-secondary hover:text-pink">Live demo <span className="ml-3"> →</span> </a>
-                    <a href="https://github.com/Alina201998/linkedin-post-generator" className="text-text-secondary hover:text-pink">GitHub</a>
+                  <div className="flex items-center gap-4 text-sm">
+                    <a href="https://linkedin-post-generator-rho.vercel.app/" target="_blank" rel="noopener noreferrer" className="relative z-10 pointer-events-auto text-text-secondary hover:text-pink">
+                      Live demo
+                    </a>
+
                   </div>
                 </div>
               </div>
 
-              <div className="bg-surface-1 border border-border rounded-xl overflow-hidden hover:border-border-strong hover:-translate-y-1 transition">
-                <div className="h-32 bg-surface-2 overflow-hidden">
+              <div className="bg-surface-1 border border-purple/50 rounded-xl overflow-hidden hover:border-purple hover:-translate-y-1 transition relative">
+                <a href="https://github.com/Alina201998/Mood-Tracker-AndroidApp" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-0" aria-label="View Mood Tracker on GitHub" />
+
+                <div className="absolute top-3 left-3 z-10 font-mono text-xs font-bold text-white bg-black/50 backdrop-blur px-2 py-1 rounded pointer-events-none">
+                  03
+                </div>
+                <div className="aspect-video bg-surface-2 overflow-hidden pointer-events-none">
                   <img
                     src="/mood_tracker_demo.gif"
                     alt="Mood Tracker demo"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-5">
+                <div className="p-5 pointer-events-none">
                   <div className="font-bold text-base mb-2">Mood Tracker</div>
                   <p className="text-text-secondary text-sm mb-4">
                     A full CRUD Android app for logging daily moods, built with core OOP principles in Java. Covered 7+ edge cases in testing, eliminating crashes across every scenario tested.
@@ -198,16 +218,13 @@ export default function Home() {
                     <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">SQLite</span>
                     <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">RecyclerView</span>
                   </div>
-                  <div className="flex gap-4 text-sm">
-                    <a href="https://github.com/Alina201998/Mood-Tracker-AndroidApp" className="text-text-secondary hover:text-pink">GitHub</a>
-                  </div>
+                  <div className="text-sm text-text-secondary"></div>
                 </div>
               </div>
 
             </div>
           </div>
         </section>
-
 
 
         <section id="about" className="px-6 py-24 border-b border-border">
@@ -219,35 +236,62 @@ export default function Home() {
               <h2 className="font-display text-3xl font-bold">About me</h2>
             </div>
 
-            <div className="grid md:grid-cols-[1fr_1.4fr] gap-12 items-center">
-              <div className="aspect-square rounded-xl bg-surface-1 overflow-hidden relative">
-                <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-purple via-pink to-amber" />
+            <div className="group grid md:grid-cols-[1fr_1.4fr] gap-10 items-center bg-surface-1 border border-border rounded-2xl p-8 md:p-10 shadow-2xl shadow-black/40 hover:border-border-strong hover:-translate-y-1 transition">
+              <div className="aspect-square rounded-xl overflow-hidden relative">
                 <Image
-                  src="/avatar.png"
+                  src="/avatarBG.jpg"
                   alt="Alina Kiptenko"
                   width={400}
                   height={400}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
 
-              <div className="text-text-secondary text-sm sm:text-base space-y-4">
-                <p>
-                  I&apos;m a Software Developer passionate about building responsive, user-friendly applications across web and mobile. I work with React, JavaScript, HTML, and CSS to create clean interfaces and smooth user experiences, and I also build with Java and Android Studio (RecyclerView, XML/ConstraintLayout).
-                </p>
-                <p>
-                  On the backend side, I work with Node.js and Express to build REST APIs, and I&apos;ve integrated the OpenAI API to add AI-driven features to full-stack applications. I also write backend logic in Python.
-                </p>
-                <p>
-                  On the data side, I use SQL with SQLite, SQL Server, and Azure SQL, as well as MongoDB — writing JOIN queries and implementing CRUD features with strong input validation and error handling. I enjoy solving real problems, writing clean code, and continuously learning.
-                </p>
+              <div>
+                <div className="text-text-secondary text-sm sm:text-base space-y-5">
+                  <div>
+                    <div className="text-purple font-mono text-xs font-bold uppercase tracking-wider mb-1.5">
+                      Frontend
+                    </div>
+                    <p>
+                      I&apos;m a <span className="text-foreground font-semibold">Software Developer</span> passionate about building responsive, user-friendly applications across web and mobile. I work with React, JavaScript, HTML, and CSS to create clean interfaces and smooth user experiences, and I also build with Java and Android Studio (RecyclerView, XML/ConstraintLayout).
+                    </p>
+                  </div>
+
+                  <div>
+                    <div className="text-pink font-mono text-xs font-bold uppercase tracking-wider mb-1.5">
+                      Backend
+                    </div>
+                    <p>
+                      I work with Node.js and Express to build REST APIs, and I&apos;ve integrated the OpenAI API to add AI-driven features to full-stack applications. I also write backend logic in Python.
+                    </p>
+                  </div>
+
+                  <div>
+                    <div className="text-amber font-mono text-xs font-bold uppercase tracking-wider mb-1.5">
+                      Data
+                    </div>
+                    <p>
+                      I use SQL with SQLite, SQL Server, and Azure SQL, as well as MongoDB — writing JOIN queries and implementing CRUD features with strong input validation and error handling. I enjoy solving real problems, writing clean code, and continuously learning.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4 mt-7">
+                  <a href="/resume.pdf" className="rounded-full px-6 py-2.5 font-semibold text-sm text-white bg-gradient-to-r from-purple via-pink to-amber">
+                    Download resume
+                  </a>
+                  <a href="#projects" className="rounded-full px-6 py-2.5 font-semibold text-sm border border-border-strong text-foreground">
+                    See my work
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
 
-      </main>
+      </main >
 
       <section id="contact" className="px-6 py-24">
         <div className="max-w-6xl mx-auto grid md:grid-cols-[1fr_1.2fr] gap-16">
@@ -272,7 +316,11 @@ export default function Home() {
             </div>
           </div>
 
-          <form className="flex flex-col gap-4">
+
+
+
+          <ContactForm />
+          {/* <form className="flex flex-col gap-4">
             <div>
               <label className="block text-sm font-semibold text-text-secondary mb-2">Your name</label>
               <input
@@ -303,7 +351,7 @@ export default function Home() {
             >
               Submit now
             </button>
-          </form>
+          </form> */}
 
         </div>
       </section>
