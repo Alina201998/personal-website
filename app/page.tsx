@@ -239,7 +239,7 @@ export default function Home() {
             <div className="group grid md:grid-cols-[1fr_1.4fr] gap-10 items-center bg-surface-1 border border-border rounded-2xl p-8 md:p-10 shadow-2xl shadow-black/40 hover:border-border-strong hover:-translate-y-1 transition">
               <div className="aspect-square rounded-xl overflow-hidden relative">
                 <Image
-                  src="/avatarBG (1).jpg"
+                  src="/avatarBG(1).jpg"
                   alt="Alina Kiptenko"
                   width={400}
                   height={400}
