@@ -34,10 +34,10 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="#projects" className="rounded-full px-7 py-3 font-semibold text-sm text-white bg-gradient-to-r from-purple via-pink to-amber">
+                <a href="#projects" className="rounded-full px-7 py-3 font-semibold text-sm text-center text-white bg-gradient-to-r from-purple via-pink to-amber">
                   View my work
                 </a>
-                <a href="#contact" className="rounded-full px-7 py-3 font-semibold text-sm border border-border-strong text-foreground">
+                <a href="#contact" className="rounded-full px-7 py-3 font-semibold text-sm text-center border border-border-strong text-foreground">
                   Get in touch
                 </a>
               </div>
@@ -79,39 +79,76 @@ export default function Home() {
         </section>
 
 
-        <section id="skills" className="px-6 py-24 border-b border-border">
+        <section id="skills" className="px-6 py-16 md:py-24 border-b border-border">
           <div className="max-w-6xl mx-auto">
             <div className="mb-12">
               <div className="font-mono text-xs uppercase tracking-wider text-purple mb-3">
                 01 · Skills
               </div>
-              <h2 className="font-display text-3xl font-bold mb-2">What I work with</h2>
+              <h2 className="font-display text-2xl sm:text-3xl font-bold mb-2">What I work with</h2>
               <p className="text-text-secondary text-sm">
                 Full-stack toolkit, grouped by layer.
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-3 gap-5">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
               <div className="bg-surface-1 border-l-[3px] border-purple rounded-lg p-6">
-                <div className="text-purple font-bold text-sm mb-2">Front-end</div>
-                <div className="text-text-secondary text-sm">
-                  React, TypeScript, Next.js, Tailwind CSS, responsive design
+                <div className="text-purple font-bold text-sm mb-3">Front-end</div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">React</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Next.js</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">TypeScript</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">JavaScript</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Tailwind CSS</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">HTML/CSS</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Vite</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Responsive design</span>
                 </div>
               </div>
 
               <div className="bg-surface-1 border-l-[3px] border-pink rounded-lg p-6">
-                <div className="text-pink font-bold text-sm mb-2">Back-end & databases</div>
-                <div className="text-text-secondary text-sm">
-                  Node.js, PostgreSQL, REST APIs, authentication
+                <div className="text-pink font-bold text-sm mb-3">Back-end &amp; APIs</div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Node.js</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Express</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">REST APIs</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Next.js API routes</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Python</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">OpenAI API</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Prompt engineering</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Resend</span>
                 </div>
               </div>
 
               <div className="bg-surface-1 border-l-[3px] border-amber rounded-lg p-6">
-                <div className="text-amber font-bold text-sm mb-2">Tools & workflow</div>
-                <div className="text-text-secondary text-sm">
-                  Git, Vercel, CI/CD, VS Code, debugging
+                <div className="text-amber font-bold text-sm mb-3">Data &amp; cloud</div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">PostgreSQL</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Supabase</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Azure SQL</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">SQL Server</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">T-SQL</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">SQLite</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">MongoDB</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Vercel</span>
                 </div>
               </div>
+
+              <div className="bg-surface-1 border-l-[3px] border-purple rounded-lg p-6">
+                <div className="text-purple font-bold text-sm mb-3">Languages, testing &amp; workflow</div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Java</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">C++</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Android Studio</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">pytest</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Git/GitHub</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">CI/CD</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Agile/Scrum</span>
+                  <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">AI-assisted development</span>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
@@ -235,7 +272,7 @@ export default function Home() {
               <h2 className="font-display text-3xl font-bold">About me</h2>
             </div>
 
-            <div className="group grid md:grid-cols-[1fr_1.4fr] gap-10 items-center bg-surface-1 border border-border rounded-2xl p-8 md:p-10 shadow-2xl shadow-black/40 hover:border-border-strong hover:-translate-y-1 transition">
+            <div className="group grid md:grid-cols-[1fr_1.4fr] gap-10 items-center bg-surface-1 border border-border rounded-2xl p-5 sm:p-8 md:p-10 shadow-2xl shadow-black/40 hover:border-border-strong hover:-translate-y-1 transition">
               <div className="aspect-square rounded-xl overflow-hidden relative">
                 <Image
                   src="/about-photo.jpg"
@@ -276,11 +313,11 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex gap-4 mt-7">
-                  <a href="/resume.pdf" className="rounded-full px-6 py-2.5 font-semibold text-sm text-white bg-gradient-to-r from-purple via-pink to-amber">
+                <div className="flex flex-col sm:flex-row gap-4 mt-7">
+                  <a href="/resume.pdf" className="rounded-full px-6 py-2.5 font-semibold text-sm text-center text-white bg-gradient-to-r from-purple via-pink to-amber">
                     Download resume
                   </a>
-                  <a href="#projects" className="rounded-full px-6 py-2.5 font-semibold text-sm border border-border-strong text-foreground">
+                  <a href="#projects" className="rounded-full px-6 py-2.5 font-semibold text-sm text-center border border-border-strong text-foreground">
                     See my work
                   </a>
                 </div>
@@ -293,7 +330,7 @@ export default function Home() {
       </main >
 
       <section id="contact" className="px-6 py-24">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-[1fr_1.2fr] gap-16">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-[1fr_1.2fr] gap-12 md:gap-16">
 
           <div>
             <div className="font-mono text-xs uppercase tracking-wider text-purple mb-3">
@@ -306,12 +343,12 @@ export default function Home() {
               alinakip20@gmail.com
             </div>
             <div className="flex items-center gap-3 mb-4 text-sm text-text-secondary">
-              <div className="w-9 h-9 rounded-lg bg-surface-1 flex items-center justify-center">📍</div>
+              <div className="w-9 h-9 rounded-lg bg-surface-1 flex items-center justify-center">⚲</div>
               Miami, FL
             </div>
             <div className="flex items-center gap-3 text-sm text-text-secondary">
-              <div className="w-9 h-9 rounded-lg bg-surface-1 flex items-center justify-center">⚙</div>
-              github.com/Alina201998
+              <div className="w-9 h-9 shrink-0 rounded-lg bg-surface-1 flex items-center justify-center" aria-hidden="true">⚙</div>
+              <a href="https://github.com/Alina201998" target="_blank" rel="noopener noreferrer" className="hover:text-pink">GitHub</a>
             </div>
           </div>
 
@@ -319,38 +356,7 @@ export default function Home() {
 
 
           <ContactForm />
-          {/* <form className="flex flex-col gap-4">
-            <div>
-              <label className="block text-sm font-semibold text-text-secondary mb-2">Your name</label>
-              <input
-                type="text"
-                placeholder="Enter your name"
-                className="w-full bg-surface-1 border border-border rounded-lg px-4 py-3 text-sm text-foreground focus:outline-none focus:border-purple"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-semibold text-text-secondary mb-2">Your email</label>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full bg-surface-1 border border-border rounded-lg px-4 py-3 text-sm text-foreground focus:outline-none focus:border-purple"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-semibold text-text-secondary mb-2">Message</label>
-              <textarea
-                rows={4}
-                placeholder="Enter your message"
-                className="w-full bg-surface-1 border border-border rounded-lg px-4 py-3 text-sm text-foreground focus:outline-none focus:border-purple"
-              />
-            </div>
-            <button
-              type="submit"
-              className="rounded-full px-7 py-3 font-semibold text-sm text-white bg-gradient-to-r from-purple via-pink to-amber"
-            >
-              Submit now
-            </button>
-          </form> */}
+
 
         </div>
       </section>
