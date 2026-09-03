@@ -350,6 +350,10 @@ export default function Home() {
               <div className="w-9 h-9 shrink-0 rounded-lg bg-surface-1 flex items-center justify-center" aria-hidden="true">⚙</div>
               <a href="https://github.com/Alina201998" target="_blank" rel="noopener noreferrer" className="hover:text-pink">GitHub</a>
             </div>
+            <div className="flex items-center gap-3 mt-4 text-sm text-text-secondary">
+              <div className="w-9 h-9 shrink-0 rounded-lg bg-surface-1 flex items-center justify-center" aria-hidden="true">in</div>
+              <a href="https://www.linkedin.com/in/alina-kiptenko-ab1ba4349/" target="_blank" rel="noopener noreferrer" className="hover:text-pink">LinkedIn</a>
+            </div>
           </div>
 
 
