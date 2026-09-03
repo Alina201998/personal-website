@@ -46,8 +46,8 @@ export default function Home() {
             <div className="relative flex items-center justify-center">
               <div className="absolute w-96 h-96 rounded-full bg-gradient-to-br from-purple via-pink to-amber opacity-20 blur-3xl" />
 
-              <div className="relative w-56 h-56 rounded-full p-1 bg-gradient-to-br from-purple via-pink to-amber">
-                <div className="w-full h-full rounded-full overflow-hidden bg-surface-2">
+              <div className="relative w-44 h-44 sm:w-56 sm:h-56">
+                <div className="w-full h-full rounded-full p-1 bg-gradient-to-br from-purple via-pink to-amber">                <div className="w-full h-full rounded-full overflow-hidden bg-surface-2">
                   <Image
                     src="/avatar.png"
                     alt="Alina Kiptenko"
@@ -57,22 +57,21 @@ export default function Home() {
                     priority
                   />
                 </div>
-              </div>
-
-              <div className="absolute -top-2 -left-6 px-4 py-2 rounded-full bg-surface-1 border border-border font-mono text-xs text-text-secondary animate-float [animation-delay:0s]">
-                React
-              </div>
-              <div className="absolute bottom-6 -right-8 px-4 py-2 rounded-full bg-surface-1 border border-border font-mono text-xs text-text-secondary animate-float [animation-delay:1.2s]">
-                Next.js
-              </div>
-              <div className="absolute -bottom-4 left-2 px-4 py-2 rounded-full bg-surface-1 border border-border font-mono text-xs text-text-secondary animate-float [animation-delay:2.4s]">
-                PostgreSQL
-              </div>
-              <div className="absolute top-1/3 -right-10 px-4 py-2 rounded-full bg-surface-1 border border-border font-mono text-xs text-text-secondary animate-float [animation-delay:0.6s]">
-                TypeScript
-              </div>
-              <div className="absolute top-4 right-4 px-4 py-2 rounded-full bg-surface-1 border border-border font-mono text-xs text-text-secondary animate-float [animation-delay:1.8s]">
-                Tailwind
+                </div>
+                <div className="absolute -top-3 -left-10 px-4 py-2 rounded-full bg-surface-1 border border-border font-mono text-xs text-text-secondary animate-float [animation-delay:0s]">
+                  React
+                </div>
+                <div className="absolute -bottom-3 -right-8 px-4 py-2 rounded-full bg-surface-1 border border-border font-mono text-xs text-text-secondary animate-float [animation-delay:1.2s]">
+                  Next.js
+                </div>
+                <div className="absolute -bottom-5 -left-10 px-4 py-2 rounded-full bg-surface-1 border border-border font-mono text-xs text-text-secondary animate-float [animation-delay:2.4s]">
+                  PostgreSQL
+                </div>
+                <div className="absolute top-1/2 -translate-y-1/2 -right-14 px-4 py-2 rounded-full bg-surface-1 border border-border font-mono text-xs text-text-secondary animate-float [animation-delay:0.6s]">                  TypeScript
+                </div>
+                <div className="absolute -top-4 -right-6 px-4 py-2 rounded-full bg-surface-1 border border-border font-mono text-xs text-text-secondary animate-float [animation-delay:1.8s]">
+                  Tailwind
+                </div>
               </div>
             </div>
 
