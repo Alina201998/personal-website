@@ -87,13 +87,13 @@ export default function Home() {
               </div>
               <h2 className="font-display text-2xl sm:text-3xl font-bold mb-2">What I work with</h2>
               <p className="text-text-secondary text-sm">
-                Full-stack toolkit, grouped by layer.
+                Full-stack skills
               </p>
             </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
-              <div className="bg-surface-1 border-l-[3px] border-purple rounded-lg p-6">
+              <div className="bg-surface-1 rounded-lg p-6 border border-border border-l-[3px] border-l-purple hover:border-purple hover:-translate-y-1 transition">
                 <div className="text-purple font-bold text-sm mb-3">Front-end</div>
                 <div className="flex flex-wrap gap-2">
                   <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">React</span>
@@ -107,7 +107,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="bg-surface-1 border-l-[3px] border-pink rounded-lg p-6">
+              <div className="bg-surface-1 rounded-lg p-6 border border-border border-l-[3px] border-l-pink hover:border-pink hover:-translate-y-1 transition">
                 <div className="text-pink font-bold text-sm mb-3">Back-end &amp; APIs</div>
                 <div className="flex flex-wrap gap-2">
                   <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Node.js</span>
@@ -121,7 +121,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="bg-surface-1 border-l-[3px] border-amber rounded-lg p-6">
+              <div className="bg-surface-1 rounded-lg p-6 border border-border border-l-[3px] border-l-amber hover:border-amber hover:-translate-y-1 transition">
                 <div className="text-amber font-bold text-sm mb-3">Data &amp; cloud</div>
                 <div className="flex flex-wrap gap-2">
                   <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">PostgreSQL</span>
@@ -135,7 +135,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="bg-surface-1 border-l-[3px] border-purple rounded-lg p-6">
+              <div className="bg-surface-1 rounded-lg p-6 border border-border border-l-[3px] border-l-purple hover:border-purple hover:-translate-y-1 transition">
                 <div className="text-purple font-bold text-sm mb-3">Languages, testing &amp; workflow</div>
                 <div className="flex flex-wrap gap-2">
                   <span className="font-mono text-xs px-2.5 py-1 rounded-full bg-surface-2 border border-border text-text-secondary">Java</span>
@@ -372,3 +372,5 @@ export default function Home() {
     </>
   );
 }
+
+
